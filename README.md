@@ -25,3 +25,5 @@ Like kobuki_node
 ##xbot_safety_controller
 Like kobuki_safety_controller
 # Xbot_quad
+# Xbot_quad
+# Xbot_quad
