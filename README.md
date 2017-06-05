@@ -27,3 +27,4 @@ Like kobuki_safety_controller
 # Xbot_quad
 # Xbot_quad
 # Xbot_quad
+# Xbot_quad
