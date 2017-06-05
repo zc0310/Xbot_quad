@@ -45,7 +45,7 @@ DiffDrive::DiffDrive() : //构造函数初始化
   angular_velocity(0.0), //linear_velocity(0.0), // command velocities, in [mm] and [mm/s]
   linear_velocity_x(0.0),
   linear_velocity_y(0.0),
-  //point_velocity(2, 0, 0.0), // command velocities, in [m/s] and [rad/s]
+  point_velocity(3,0.0), // command velocities, in [m/s] and [rad/s]
   bias(0.388*3651/3600), // wheelbase, wheel_to_wheel, in [m]   ?????
   wheel_radius(0.085), // radius of main wheel, in [m]          ?????
   tick_to_rad(0.00078539815f), //f表示单精度浮点数 编码器每计一次数对应的角度

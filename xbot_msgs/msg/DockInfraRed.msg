@@ -10,5 +10,7 @@ uint8 FAR_RIGHT   = 32
 
 Header header
 uint8 left
+uint8 front
 uint8 center
 uint8 right
+uint8 back
