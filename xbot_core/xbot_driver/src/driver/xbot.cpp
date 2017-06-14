@@ -11,6 +11,8 @@
  *****************************************************************************/
 
 #include <cmath>
+#include <iostream>
+#include <fstream>
 #include <ecl/math.hpp>
 #include <ecl/geometry/angle.hpp>
 #include <ecl/time/sleep.hpp>
@@ -469,8 +471,17 @@ namespace xbot
     std::cout << "linear_velocity_x: " << velocity_commands[0] << ", linear_velocity_y: " << velocity_commands[1]
               << ", angular_velocity: " << velocity_commands[2] << std::endl;
     if ((velocity_commands[0]!=0) || (velocity_commands[1]!=0) || (velocity_commands[2]!=0)){//有速度指令
+//        std::ofstream fout;
+//        fout.open("/tmp/2.txt");
+//        fout << velocity_commands[0]; //<< "|" <<velocity_commands[1]<< "|" <<velocity_commands[2] <<std::endl;
+//        fout << velocity_commands[1] <<std::endl;
+//        fout << velocity_commands[2] <<std::endl;
+//        fout.close();
+        //return velocity_commands[0];
         sendCommand(Command::SetVelocityControl(velocity_commands[0], velocity_commands[1],
                                                 velocity_commands[2])); //线速度 角速度 标识符分别赋值给相应分量
+
+        //std::cout<<velocity_commands[0] << "|" <<velocity_commands[1]<< "|" <<velocity_commands[2] <<std::endl;
     }
 
 /*

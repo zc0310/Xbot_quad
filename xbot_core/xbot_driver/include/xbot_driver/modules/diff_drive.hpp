@@ -37,7 +37,7 @@ namespace xbot {
 class xbot_PUBLIC DiffDrive { //差分驱动里程计模型
 public:
   DiffDrive();
-  const ecl::DifferentialDrive::Kinematics& kinematics() { return diff_drive_kinematics; }
+  //const ecl::DifferentialDrive::Kinematics& kinematics() { return diff_drive_kinematics; }
   void update(const unsigned int &time_stamp,   //时间戳
               const uint16_t &encoder_1,
               const uint16_t &encoder_2,
@@ -86,7 +86,7 @@ private:
   int   imu_heading_offset;
   const float tick_to_rad;
 
-  ecl::DifferentialDrive::Kinematics diff_drive_kinematics;
+  //ecl::DifferentialDrive::Kinematics diff_drive_kinematics;
   ecl::Mutex velocity_mutex, state_mutex;
 
   // Utility

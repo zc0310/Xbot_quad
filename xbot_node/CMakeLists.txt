@@ -35,5 +35,6 @@ install(DIRECTORY image
 )
 install(PROGRAMS scripts/getOdom2D.py
                  scripts/getYaw.py
+                 scripts/xbotq_keyop.py
         DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
