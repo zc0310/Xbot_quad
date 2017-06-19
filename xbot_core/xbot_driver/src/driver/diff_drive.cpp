@@ -140,7 +140,7 @@ void DiffDrive::update(const unsigned int &time_stamp,   //该update函数主要
   double dy = 0.353553391 * wheel_radius * (-(double)(tick_to_rad * diff_ticks_3) + (double)(tick_to_rad * diff_ticks_4) -
                (double)(tick_to_rad * diff_ticks_1) + (double)(tick_to_rad * diff_ticks_2));
   double domega = wheel_radius * (-(double)(tick_to_rad * diff_ticks_3) + (double)(tick_to_rad * diff_ticks_4) +
-               (double)(tick_to_rad * diff_ticks_1) - (double)(tick_to_rad * diff_ticks_2)) / (2 * bias);
+               (double)(tick_to_rad * diff_ticks_1) - (double)(tick_to_rad * diff_ticks_2)) / (4 * bias);
   pose_update.translation(dx,dy);
   pose_update.rotation(domega);
 

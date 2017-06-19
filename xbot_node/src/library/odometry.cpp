@@ -28,7 +28,7 @@ Odometry::Odometry () :
   base_frame("base_footprint"),
   use_imu_heading(true),
   publish_tf(true)
-{};
+{}
 //Odometry::init 重要
 void Odometry::init(ros::NodeHandle& nh, const std::string& name) {
   double timeout;
